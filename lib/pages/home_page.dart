@@ -64,7 +64,52 @@ class _HomePageState extends State<HomePage>{
           elevation: 0,
       ),
       drawer: Drawer(
-        backgroundColor: Colors.grey[300],
+        backgroundColor: Colors.black,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Column(
+              children: [
+                // logo
+                DrawerHeader(
+                  child: Image.asset('lib/images_flutter/nike_logo.jpg'),            
+                  // color: Colors.white,
+                ),
+
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                  // child: Divider(
+                  //   color: Colors.grey[800],
+                  // ),
+                ),
+
+                // pages
+                Padding(
+                  padding: const EdgeInsets.only(left: 25.0),
+                  child: ListTile(leading: Icon(Icons.home, color: Colors.white,), 
+                  title: Text('Home', style: TextStyle(color: Colors.white)),
+                  ),
+                ),
+                
+                Padding(
+                  padding: const EdgeInsets.only(left: 25.0),
+                  child: ListTile(leading: Icon(Icons.info, color: Colors.white,), 
+                  title: Text('About', style: TextStyle(color: Colors.white)),
+                  ),
+                ),
+
+                  ],
+                ),
+
+                Padding(
+                  padding: const EdgeInsets.only(left: 25.0, bottom: 25.0),
+                  child: ListTile(
+                    leading: Icon(Icons.logout, color: Colors.white,), 
+                    title: Text('Logout', style: TextStyle(color: Colors.white)),
+                  ),
+                ),
+              ],
+          ),
       ),
       body: _pages[_selectIndex],
     );
