@@ -37,9 +37,6 @@ class _HomePageState extends State<HomePage>{
   ];
 
   //UI
-
-
-
   @override
   Widget build(BuildContext context){
     return Scaffold(

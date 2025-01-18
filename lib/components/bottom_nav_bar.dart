@@ -25,11 +25,13 @@ class MyBottomNavBar extends StatelessWidget {
         gap: 8,
         onTabChange: (value) => onTabChange!(value),
         tabs: const [
+          // shop button
           GButton(
             icon: Icons.home,
             text: 'Shop',
           ),
           
+          // cart button
           GButton(
             icon: Icons.shopping_bag_rounded,
             text: 'Cart',

@@ -19,16 +19,13 @@ class CartItem extends StatefulWidget {
 }
 
 class _CartItemState extends State<CartItem>{
-  // variable
-  
-
-  //method
+  // methods
   // remove item from cart
   void removeItemFromCart(){
     Provider.of<Cart>(context, listen: false).removeItemFromCart(widget.shoe);
   }
 
-  //UI
+  // UI
   @override
   Widget build(BuildContext context){
     return Container(

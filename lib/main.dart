@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       builder: (context, child) => MaterialApp(
         // deactivate debug banner 
         debugShowCheckedModeBanner: false,
-        // makes white screen
+        // intro page
         home: IntroPage(), 
       ),
     );

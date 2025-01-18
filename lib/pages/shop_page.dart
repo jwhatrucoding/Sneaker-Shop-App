@@ -16,9 +16,7 @@ class ShopPage extends StatefulWidget {
 }
 
 class _ShopPageState extends State<ShopPage>{  
-  // variable
-
-  //method
+  // methods
   // add the shoe to cart
   void addShoeToCart(Shoe shoe) {
     Provider.of<Cart>(context, listen: false).addItemToCart(shoe);
@@ -34,7 +32,7 @@ class _ShopPageState extends State<ShopPage>{
     );
   }
 
-  //UI
+  // UI
   @override
   Widget build(BuildContext context){
     return Consumer<Cart>(
@@ -83,7 +81,6 @@ class _ShopPageState extends State<ShopPage>{
                   color: Colors.blue,
                 ),
               ),
-            // Image.asset('lib/images_flutter/nike_logo.jpg', height: 210,),
             ],
           ),
         ),
